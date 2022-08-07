@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BodyDiv, BodyCenter } from './styles/BodyStyle'
+import Welcome from './assets/Welcome.jpg'
+export default function App() {
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BodyDiv>
+      <BodyCenter>
+        <div className="row">
+          <img src={Welcome} className="img-fluid" alt="book_complete" />
+        </div>
+        <div className='row text-center'>
+          <p className='h1'>Welcome</p>
+          <p className='h2'>My Web Login</p>
+        </div>
+      </BodyCenter>
+    </BodyDiv>
   );
 }
-
-export default App;
